@@ -1,13 +1,16 @@
 import React from 'react';
+import TodoList from './components/TodoComponents/TodoList';
 
 const tasks = [
   {
     name: 'Eat all the pizza',
-    id: 1
+    id: 1,
+    completed: false
   },
   {
     name: 'Walk the pupper',
-    id: 2
+    id: 2,
+    completed: false
   }
 ]
 
@@ -36,6 +39,7 @@ class App extends React.Component {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
+        <TodoList tasks={this.state.tasks} />
       </div>
     );
   }
