@@ -18,19 +18,20 @@ class TodoForm extends React.Component {
         event.preventDefault();
         this.props.addTask(this.state.newTask);
         this.setState({
-            newTask:''
+            newTask: ''
         })
     }
 
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                <input type='text' name='task' placeholder='...add task' onChange={this.handleChanges} value={this.state.newTask} />
-                <button>Add</button>
-                {/* <button onClick={this.props.deleteTasks}>Clear Completed</button> */}
-            </form>
-            <button onClick={this.props.deleteTasks}>Clear Completed</button>
+                <form>
+                   <input className='inputBar' type='text' name='task' placeholder='...add task' autoComplete='off' onChange={this.handleChanges} value={this.state.newTask} />
+                    <div className='buttonContainer'>
+                        <button className='buttons' onClick={this.handleSubmit}>Add</button>
+                        <button className='buttons' onClick={this.props.deleteTasks}>Clear</button>
+                    </div>
+                </form>
             </div>
         )
     }

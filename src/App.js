@@ -66,10 +66,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>My Todo List</h2>
-        <TodoList tasks={this.state.tasks} toggleComplete={this.toggleComplete}/>
+      <div className='ToDoContainer'>
+        <h1>Things That Need Doing</h1>
         <TodoForm addTask={this.addTask} handleClearTodos={this.clearCompletedTodos} deleteTasks={this.deleteTasks} />
+        <TodoList tasks={this.state.tasks} toggleComplete={this.toggleComplete}/>
       </div>
     );
   }
