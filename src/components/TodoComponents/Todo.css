@@ -2,6 +2,6 @@
     cursor: pointer;
 }
 
-.task-completed {
+.task.completed {
     text-decoration: line-through;
 }
