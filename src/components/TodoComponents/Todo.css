@@ -1,0 +1,48 @@
+html {
+    background-color: firebrick;
+    color: white;
+    font-family: 'Lucida Casual', 'Comic Sans MS';
+}
+
+.ToDoContainer {
+    text-align: center;
+}
+
+.inputBar {
+    width: 50%;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: 'Lucida Casual', 'Comic Sans MS';
+    padding: 1.5%;
+    border: 2px solid white;
+    outline: none;
+    margin-bottom: 3%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.buttons {
+    background-color: #22283A;
+    color: white;
+    padding: 8px 0px;
+    border-radius: 5px;
+    font-size: 1.0rem;
+    font-family: 'Lucida Casual', 'Comic Sans MS';
+    width: 30%;
+    border: 2px solid #22283A;
+    outline: none;
+}
+
+.task {
+    cursor: pointer;
+}
+
+.task.completed {
+    text-decoration: line-through;
+}
